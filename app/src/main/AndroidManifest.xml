@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidandroid="http://schemas.android.com/apk/res-auto"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.srijaniitism.srijan">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoicons"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logoicons"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name="org.srijaniitism.srijan.EventsView.InformalActivity"></activity>
+        <activity android:name="org.srijaniitism.srijan.EventsView.EventsActivity3" />
+        <activity android:name="org.srijaniitism.srijan.EventsView.EventsActivity2" />
+        <activity
+            android:name="org.srijaniitism.srijan.EventsView.SingleEventActivity"
+            android:theme="@style/AppFullScreenTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDL1uiLG9_YPfR88JN5jnzQaHuPGLCUKLE" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="org.srijaniitism.srijan.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.srijaniitism.srijan.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                android:screenOrientation="portrait"
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.srijaniitism.srijan.SignInActivity" />
+        <activity
+            android:name="org.srijaniitism.srijan.EventsView.EventsActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="org.srijaniitism.srijan.MainActivity" />
+        <service android:name="org.srijaniitism.srijan.firebaseService.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

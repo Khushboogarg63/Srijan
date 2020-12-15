@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.srijaniitism.srijan.Fragments.ProfileFragment"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingBottom="10dp"
+        android:text="profile"
+        android:textColor="#572702"
+        android:textSize="70sp"
+        android:gravity="top"
+        android:fontFamily="sans-serif-condensed" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:indicatorColor="#D6B051"
+        app:indicatorName="BallClipRotatePulseIndicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/internet"
+        android:text="No Internet Connection"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#042E4D"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:alpha="0.8"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/profile_image"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_margin="15dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="@string/username"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#042E4D"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:alpha="0.8"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/college"
+        android:text="@string/college"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#042E4D"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:alpha="0.8"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Events participated:"
+        android:textColor="#042E4D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linlay2"
+        android:orientation="vertical"
+        android:scrollbars="vertical" />
+    </ScrollView>
+</LinearLayout>

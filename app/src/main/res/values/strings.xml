@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SRIJAN\'20</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home">Home</string>
+    <string name="feed">Feed</string>
+    <string name="profile">Profile</string>
+    <string name="map">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="chat">Chat</string>
+    <string name="dev">Dev Info</string>
+    <string name="highlights">Highlights</string>
+    <string name="competition">Competitions</string>
+    <string name="star">Star Attractions</string>
+    <string name="informal">Informals</string>
+    <string name="event1">Event1</string>
+    <string name="about">about</string>
+    <string name="abouttext">The largest socio-cultural fest of its kind in eastern India, SRIJAN, is the platform where the most creative minds of the nation come together and battle it out in the fields of dance, music, art, dramatics, literary arts, fine arts and much more. With a footfall of more than 15000 every year, it is a place where the fine skills and hard work of every participant gets what it deserves - recognition, appreciation and inspiration. And that’s not all! Every night of this three-day spectacular extravaganza is a star-studded one where we have renowned performers from our country making you let go of yourself and inspire you to achieve the impossible. SRIJAN’20 is all set to raise the standards set by its previous editions and make these three nights an unforgettable one and add on to your caravan of memories.</string>
+    <string name="facebook_app_id">Your ID here (int)</string>
+    <string name="link1"><a href="https://www.linkedin.com/in/ashwani-kumar-899aa515b/">Ashwani Kumar</a></string>
+    <string name="link2"><a href="https://www.linkedin.com/in/harshitpathak0311/">Harshit Pathak</a></string>
+    <string name="link3"><a href="https://www.linkedin.com/in/devashish-bariko-151105173/ ">Devashish Bariko</a></string>
+    <string name="selectyourcollege">Enter Your College Name</string>
+    <string-array name="college">
+        <item>-</item>
+        <item>IIT (ISM) Dhanbad</item>
+        <item>College A</item>
+        <item>College B</item>
+        <item>College C</item>
+        <item>College D</item>
+        <item>College E</item>
+    </string-array>
+    <string name="signin">Sign In</string>
+    <string name="username">Username</string>
+    <string name="college">College</string>
+
+    <string name="aftermovie1"><a href="https://www.youtube.com/watch?v=M8uW4XZdTlQ">SRIJAN \'19 Aftermovie by LCI </a></string>
+    <string name="aftermovie2"><a href="https://www.youtube.com/watch?v=LRjmXwA1pOk">SRIJAN \'19 Aftermovie by Alchemy Pixels</a></string>
+    <string name="merchandise"><a href="https://www.srijaniitism.org/register/">Merchandise Link</a></string>
+
+</resources>

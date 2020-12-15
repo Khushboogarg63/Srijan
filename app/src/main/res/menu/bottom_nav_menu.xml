@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/links"
+        android:icon="@drawable/ic_voice_chat_black_24dp"
+        android:title="'19"
+        app:cnb_iconColor="@color/home" />
+
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Feed"
+        app:cnb_iconColor="@color/feed" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        app:cnb_iconColor="@color/home" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_face_black_24dp"
+        android:title="Profile"
+        app:cnb_iconColor="@color/map" />
+
+    <item
+        android:id="@+id/dev"
+        android:icon="@drawable/ic_build_black_24dp"
+        android:title="Dev"
+        app:cnb_iconColor="@color/profile" />
+</menu>
+

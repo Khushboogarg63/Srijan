@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <!-- Event Name -->
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:paddingStart="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Event Name"
+        android:textColor="#882F52"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!-- Event duration -->
+    <TextView
+        android:id="@+id/event_timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="09:00 - 12:00 PM"
+        android:paddingLeft="3dp"
+        android:paddingRight="6dp"
+        android:textColor="#185E8D" />
+
+    <ImageView
+        android:id="@+id/venue_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_name"
+        android:src="@drawable/ic_location_on_black_24dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/venue"
+        android:layout_toRightOf="@+id/venue_icon"
+        android:layout_below="@+id/event_name"
+        android:text="Venue"
+        android:textColor="#201F02"
+        android:textSize="20sp"
+        android:paddingBottom="5dp"/>
+</RelativeLayout>

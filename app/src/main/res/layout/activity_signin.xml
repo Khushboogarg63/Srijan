@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gjiazhe.panoramaimageview.PanoramaImageView
+        android:id="@+id/panorama_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/scene6"
+        app:piv_enablePanoramaMode="true"
+        app:piv_invertScrollDirection="true"
+        app:piv_show_scrollbar="false" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.srijaniitism.srijan.SignInActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:textColorHint="#ffff">
+
+        <EditText
+            android:id="@+id/collegename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:hint="@string/selectyourcollege"
+            android:maxLength="25"
+            android:maxLines="1"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/signin"
+        android:text="@string/signin"
+        android:layout_margin="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        app:buttonColor="#F3CCAD"
+        app:cornerRadius="150dp"
+        app:glowColor="#9866E9"
+        app:pressedGlowSize="50dp"
+        app:unpressedGlowSize="4dp" />
+
+</LinearLayout>
+</FrameLayout>
